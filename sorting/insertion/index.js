@@ -1,8 +1,4 @@
-const random = () => { return Math.floor(Math.random() * 999) }
-const numbers = Array.from({ length: 100 }, () => random());
-console.log(numbers.join(" "));
-
-const insertionSort = (array) => {
+export const insertionSort = (array) => {
   for (let i = 1; i < array.length; ++i) {
     const key = array[i];
     let j = i - 1;
@@ -14,6 +10,3 @@ const insertionSort = (array) => {
   }
   return array;
 }
-
-insertionSort(numbers);
-console.log(numbers.join(" "));

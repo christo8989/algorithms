@@ -1,7 +1,3 @@
-const random = () => { return Math.floor(Math.random() * 10) }
-const numbers = Array.from({ length: 10 }, () => random());
-console.log(numbers.join(" "));
-
 const merge = (array, a, b, c) => {
   const Ln = b - a + 1;
   const L = array.slice(a, a + Ln);
@@ -28,7 +24,7 @@ const merge = (array, a, b, c) => {
   }
 }
 
-const merge_sort = (array, a, c) => {
+export const merge_sort = (array, a, c) => {
   if (a == null) a = 0;
   if (c == null) c = array.length - 1;
 
@@ -39,7 +35,3 @@ const merge_sort = (array, a, c) => {
     merge(array, a, b, c)
   }
 }
-
-merge_sort(numbers);
-
-console.log(numbers.join(" "));
