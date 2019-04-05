@@ -2,6 +2,9 @@
   "name": "algorithms",
   "version": "1.0.0",
   "main": "main.js",
+  "scripts": {
+    "sort": "node main.js"
+  },
   "dependencies": {
     "esm": "^3.2.22"
   }
